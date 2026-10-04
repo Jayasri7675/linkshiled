@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - LinkShield</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🛡️ <span>Link</span>Shield</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="scanner.html">Scanner</a>
+        <a href="history.html">History</a>
+        <a href="login.html" id="loginNav" class="login">Login</a>
+        <button id="logoutNav" class="logout" onclick="logout()">Logout</button>
+    </div>
+</nav>
+
+<section class="history page active">
+    <div class="history-top">
+        <div>
+            <small>ACTIVITY</small>
+            <h1>Scan History</h1>
+        </div>
+        <div>
+            <button class="btn secondary" onclick="clearHistory()">🗑 Clear</button>
+            <a href="scanner.html" class="btn primary">+ New Scan</a>
+        </div>
+    </div>
+
+    <div id="historyList" class="history-list"></div>
+</section>
+
+<footer>🛡️ LinkShield — Phishing URL Detection System</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
